@@ -1,6 +1,8 @@
 const db = [];
-const usuarios_controller = require("./usuario.js");
-const model = require("../models/rede_models.js");
+const clientes_controller = require("./cliente.js");
+const servicos_controller = require("./servico.js");
+const model = require("../models/atendimento_models.js");
+
 const store = (body) => {
   const novo = model(body);
   if (novo) {
